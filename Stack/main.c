@@ -4,7 +4,7 @@
 
 int main(void) {
     Stack_t* _stack = (Stack_t*) malloc(sizeof(Stack_t));
-    stack_set_size(_stack, 2*sizeof(int)); // Setting stack_size = 8192 bytes
+    stack_set_size(_stack, 2*sizeof(int));
 
     push(_stack, 100);
     printf("Last Element: %d\n", _stack->s_pointer->data);
